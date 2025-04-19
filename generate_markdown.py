@@ -1,6 +1,7 @@
 from pathlib import Path
 import re
-from datetime import datetime
+from datetime import datetime, timedelta
+
 
 # Settings
 gallery_root = Path("gallery")
