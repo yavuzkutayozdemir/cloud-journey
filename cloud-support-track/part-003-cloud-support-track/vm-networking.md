@@ -1,18 +1,23 @@
-## Part 003 – Ekran Resmi 2025 04 20 23.03.05 (Day 4)
+## Part 003 — VM Networking
 
-### Goal
-<!-- Write what you aimed to achieve in this part -->
-
----
-
-### Technical Steps
-<!-- List the steps you followed, commands you used, and how you implemented the task -->
+### Goal  
+To understand how networking is handled within Azure Virtual Machines and to manually configure network components like Network Security Groups (NSGs), public IPs, and virtual network interfaces.
 
 ---
 
-### Outcome
-<!-- Summarize the result, what worked, and what challenges you faced -->
+### Technical Steps  
+1. Navigated to the Azure portal and selected the target Virtual Machine.  
+2. Located and opened the "Networking" tab of the VM.  
+3. Created a custom Network Security Group (NSG) named `cloud-journey-nsg`.  
+4. Associated the NSG with the VM’s network interface.  
+5. Added inbound rule to allow SSH traffic (Port 22) from a specific IP range.  
+6. Verified existing default rules (Deny All Inbound / Allow All Outbound).  
+7. Explored the effective security rules to confirm applied NSG behavior.
 
-<br>
+---
 
+### Outcome  
+Successfully linked a custom NSG to the VM and configured basic inbound/outbound rules. This laid the foundation for secure and controlled VM access through defined ports and protocols.
+
+<br>  
 ![Ekran Resmi 2025 04 20 23.03.05 screen](../../gallery/cloud-support-track/part-003-day-004-ekran-resmi-2025-04-20-23.03.05.png)
