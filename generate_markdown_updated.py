@@ -52,6 +52,9 @@ for series_folder in gallery_root.iterdir():
         if not md_path.exists():
             md_content = f"""## Part {next_part:03d} – {title_slug} (Day {day_diff})
 
+        git add cloud-support-track/**/*.md || true
+
+
 ### Goal
 <!-- Write what you aimed to achieve in this part -->
 
