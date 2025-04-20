@@ -19,4 +19,4 @@ To understand how networking is handled within Azure Virtual Machines and to man
 ### Outcome  
 Successfully linked a custom NSG to the VM and configured basic inbound/outbound rules. This laid the foundation for secure and controlled VM access through defined ports and protocols.
 <br>
-
+(gallery/cloud-support-track/part-003-day-004-vm-networking.png)
