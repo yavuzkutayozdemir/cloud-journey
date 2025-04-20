@@ -1,17 +1,23 @@
-## Part 001 – Azure Foundations (Day 1)
+## Part 1 — Azure Foundations
 
 ### Goal
-<!-- Write what you aimed to achieve in this part -->
+Deploy a basic Virtual Machine in Azure to establish the foundation for further infrastructure work.
 
 ---
 
 ### Technical Steps
-<!-- List the steps you followed, commands you used, and how you implemented the task -->
+1. Created Resource Group: `rg-cloudbootcamp-001`
+2. Region selected: `francecentral`
+3. Image used: `Ubuntu 22.04 LTS`
+4. SSH key type: Ed25519
+5. Role assigned: Azure Admin
+6. VM deployed successfully via Azure Portal
 
 ---
 
 ### Outcome
-<!-- Summarize the result, what worked, and what challenges you faced -->
+The initial infrastructure base is now ready.  
+A clean and traceable deployment is in place with proper grouping and security configuration.
 
 <br>
 
