@@ -19,6 +19,6 @@ Deploy a basic Virtual Machine in Azure to establish the foundation for further 
 The initial infrastructure base is now ready.  
 A clean and traceable deployment is in place with proper grouping and security configuration.
 
-### Screenshots
+### Screenshot
 
 ![Azure Foundations screen](https://raw.githubusercontent.com/yavuzkutayozdemir/cloud-journey/main/gallery/cloud-support-track/part-001-day-001-azure-foundations.png)
