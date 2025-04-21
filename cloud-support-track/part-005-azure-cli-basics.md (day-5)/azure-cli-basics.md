@@ -1,4 +1,4 @@
-### Part 005 — azure cli basics (day 5)
+### Part 005 — Azure cli basics (day 5)
 
 this part explores how to manage azure resources through the azure cloud shell, without touching the local terminal.
 
