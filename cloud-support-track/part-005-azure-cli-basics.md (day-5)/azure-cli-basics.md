@@ -1,24 +1,24 @@
-### part 005 — azure cli basics (day 5)
+### Part 005 — azure cli basics (day 5)
 
 this part explores how to manage azure resources through the azure cloud shell, without touching the local terminal.
 
 ---
 
-### scenario
+### Scenario
 
 i needed to provision a virtual machine and manage it using cli tools instead of the portal.  
 i accessed the cloud shell directly from the azure portal and reviewed the cli environment.
 
 ---
 
-### goal
+### Goal
 
 access and review the azure cli environment via browser-based cloud shell.  
 understand how command-line tools enable faster and automated operations.
 
 ---
 
-### what you did
+### What you did
 
 - opened azure portal  
 - launched cloud shell (bash) from the top menu  
@@ -32,21 +32,21 @@ understand how command-line tools enable faster and automated operations.
 
 ---
 
-### problem faced
+### Problem faced
 
 i couldn’t access the azure cli from my local machine due to lack of setup and permissions.  
 this made it difficult to test or manage resources using command-line tools.
 
 ---
 
-### how i solved it
+### How i solved it
 
 i used the azure portal’s built-in cloud shell to run azure cli commands directly in the browser.  
 this allowed me to bypass local setup entirely and still perform cli-based management tasks.
 
 ---
 
-### outcome
+### Outcome
 
 - gained hands-on experience with azure cli  
 - understood how cloud shell can replace local cli setup  
