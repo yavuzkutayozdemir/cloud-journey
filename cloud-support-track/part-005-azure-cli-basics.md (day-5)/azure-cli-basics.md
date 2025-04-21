@@ -29,7 +29,8 @@ CLI access is now available directly from your browser.
 
 ## Screenshot
 
-![Azure CLI](https://raw.githubusercontent.com/yavuzkutayozdemir/cloud-journey/main/gallery/cloud-support-track/part-005-day-006-azure-cli-basics.png)
+<br>
+![Azure CLI](https://raw.githubusercontent.com/yavuzkutayozdemir/cloud-journey/main/gallery/cloud-support-track/part-005-day-005-azure-cli-basics.png)
 
 ---
 
