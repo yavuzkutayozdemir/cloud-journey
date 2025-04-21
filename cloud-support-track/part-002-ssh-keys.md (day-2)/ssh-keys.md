@@ -14,6 +14,6 @@ Authenticate to virtual machines securely without using passwords, by generating
 
 ### Outcome  
 Passwordless SSH login was established with the VM using a generated key pair.  
-<br>  
 
+### Screenshot
 ![ssh key ekranı](https://raw.githubusercontent.com/yavuzkutayozdemir/cloud-journey/main/gallery/cloud-support-track/part-002-day-002-ssh-keys.png)
