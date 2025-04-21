@@ -1,35 +1,58 @@
-# Part 005 – Azure CLI Basics (day-6)
+### part 005 — azure cli basics (day 5)
 
-## Goal
-
-Understand what Azure CLI is, where it is used, and why it matters in real cloud environments.
+this part explores how to manage azure resources through the azure cloud shell, without touching the local terminal.
 
 ---
 
-## What is Azure CLI?
+### scenario
 
-Azure CLI is a command-line tool for managing Azure resources quickly and efficiently.  
-It allows automation, consistency, and advanced scripting, reducing dependency on manual portal clicks.
-
----
-
-## Scenario
-
-You were asked to provision a VM using Azure CLI instead of the Portal.  
-Although you are not expected to run the commands yet, you're exploring the structure and power of CLI tools.
+i needed to provision a virtual machine and manage it using cli tools instead of the portal.  
+i accessed the cloud shell directly from the azure portal and reviewed the cli environment.
 
 ---
 
-## CLI Environment Accessed
+### goal
 
-You have successfully opened the Azure Cloud Shell from the Portal.  
-CLI access is now available directly from your browser.
+access and review the azure cli environment via browser-based cloud shell.  
+understand how command-line tools enable faster and automated operations.
 
 ---
 
+### what you did
+
+- opened azure portal  
+- launched cloud shell (bash) from the top menu  
+- verified the azure cli environment was active  
+- explored basic az command syntax
+
+---
 ## Screenshot
 
 ![Azure CLI](https://raw.githubusercontent.com/yavuzkutayozdemir/cloud-journey/main/gallery/cloud-support-track/part-005-day-005-azure-cli-basics.png)
+
+---
+
+### problem faced
+
+i couldn’t access the azure cli from my local machine due to lack of setup and permissions.  
+this made it difficult to test or manage resources using command-line tools.
+
+---
+
+### how i solved it
+
+i used the azure portal’s built-in cloud shell to run azure cli commands directly in the browser.  
+this allowed me to bypass local setup entirely and still perform cli-based management tasks.
+
+---
+
+### outcome
+
+- gained hands-on experience with azure cli  
+- understood how cloud shell can replace local cli setup  
+- successfully explored command structure and usage
+
+
 
 ---
 
