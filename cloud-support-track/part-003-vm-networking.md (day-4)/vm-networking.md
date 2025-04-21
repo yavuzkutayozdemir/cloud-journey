@@ -21,5 +21,4 @@ Successfully linked a custom NSG to the VM and configured basic inbound/outbound
 
 
 ### Screenshot
-(cloud-support-track/part-003-vm-networking.md (day-4)/part-003-day-004-vm-networking.png)
-
+![VM Networking Screenshot](https://raw.githubusercontent.com/yavuzkutayozdemir/cloud-journey/main/cloud-support-track/part-003-vm-networking.md%20(day-4)/part-003-day-004-vm-networking.png)
