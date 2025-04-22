@@ -39,7 +39,7 @@ set up a basic storage account via the azure portal, and review the types of sto
 
 <br>
 
-![File Share](https://raw.githubusercontent.com/yavuzkutayozdemir/cloud-journey/main/gallery/cloud-support-track/part-006-day-006-azure-storage-file-share.png)
+![File Share](https://github.com/yavuzkutayozdemir/cloud-journey/blob/aef4ce42fde7a5b7bac2b1b18f57851745246f7b/cloud-support-track/part-006-azure-storage-account.md%20(day-6)/part-006-day-006-storage-fileshare.png)
 
 
 ---
