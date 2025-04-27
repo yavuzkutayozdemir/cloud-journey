@@ -1,23 +1,49 @@
-Part 7 – Activity Logs (day-7)
+🎯 Goal
 
-Today, after setting up a virtual machine in Azure, I noticed that some resources were behaving unexpectedly. Specifically, there was a brief outage in external access to the application. To investigate, I navigated directly to the Activity Log section of the Azure portal.
-
-The Activity Log provides a time-stamped record of all operations performed on Azure resources. It’s a critical tool for auditing and troubleshooting.
-
-I applied filters to display only the entries related to my virtual machine, vm-support, and then narrowed the time window to focus on the most recent actions. One entry caught my attention:
-	•	Action: ‘audit’ Policy action
-	•	Status: Successful
-	•	Initiated by: My user account
-	•	Time: 16 minutes ago
-
-This log entry helped me quickly realize that a policy applied to the virtual machine was limiting its network access. After reviewing the policy, I made the necessary adjustments and restored connectivity.
-
-This was a real-world scenario where the built-in observability tools in Azure proved invaluable.
+Use Azure Activity Logs to identify and resolve unexpected changes to a virtual machine resource via the Azure Portal (no CLI used).
 
 ⸻
 
-What I Learned
-	•	Azure Activity Logs are essential for diagnosing operational issues and auditing changes across cloud resources.
-	•	Filtering and time-scoping in the Activity Log helps pinpoint events with precision.
-	•	Policy actions can silently impact the behavior of a resource, even if everything appears properly configured.
-	•	Troubleshooting skills are not just technical—they also rely on understanding the right tools and interpreting what they reveal.
+🔍 Problem
+
+While testing my Linux VM, I suddenly lost remote access. No recent changes were made by me, and the VM appeared healthy in the portal. This unexpected behavior suggested that an automated policy or background action might have silently affected my network settings.
+
+⸻
+
+🧠 What I Solved
+
+By digging into the Azure Activity Logs, I discovered that a policy enforcement action ('audit' Policy action) had modified the virtual network configuration. Recognizing it was automatically applied by the subscription’s default governance rules, I updated the VM’s configuration accordingly and restored access without downtime.
+
+⸻
+
+� Scenario
+
+After setting up a Linux VM in Azure, I noticed unusual behavior — external access was temporarily disrupted. Suspecting a configuration issue, I explored the Activity Logs to investigate what had happened behind the scenes.
+
+⸻
+ What You Did
+	1.	Opened the Azure Portal and navigated to the VM named vm-support
+	2.	Clicked on Activity Log in the left-hand menu
+	3.	Filtered logs by:
+	•	Time range: Last 6 hours
+	•	Resource: vm-support
+	•	Subscription: Azure for Students
+	4.	Found a relevant event:
+	•	Action: 'audit' Policy action
+	•	Status: Successful
+	•	Initiated by: My user ID
+	5.	Realized a network restriction policy had been enforced
+	6.	Adjusted the policy to restore connectivity
+
+⸻
+
+ What I Learned
+	•	How to interpret and filter Azure Activity Logs to trace system-level events
+	•	The role of policy assignments and their hidden impact on deployed resources
+	•	That visibility into past actions is key for maintaining uptime and accountability
+	•	Real-life debugging often starts with the question: “What changed?”
+
+⸻
+
+ Screenshot
+ 
