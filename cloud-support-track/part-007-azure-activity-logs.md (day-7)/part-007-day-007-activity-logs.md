@@ -1,22 +1,22 @@
-🎯 Goal
+ Goal
 
 Use Azure Activity Logs to identify and resolve unexpected changes to a virtual machine resource via the Azure Portal (no CLI used).
 
 ⸻
 
-🔍 Problem
+ Problem
 
 While testing my Linux VM, I suddenly lost remote access. No recent changes were made by me, and the VM appeared healthy in the portal. This unexpected behavior suggested that an automated policy or background action might have silently affected my network settings.
 
 ⸻
 
-🧠 What I Solved
+ What I Solved
 
 By digging into the Azure Activity Logs, I discovered that a policy enforcement action ('audit' Policy action) had modified the virtual network configuration. Recognizing it was automatically applied by the subscription’s default governance rules, I updated the VM’s configuration accordingly and restored access without downtime.
 
 ⸻
 
-� Scenario
+ Scenario
 
 After setting up a Linux VM in Azure, I noticed unusual behavior — external access was temporarily disrupted. Suspecting a configuration issue, I explored the Activity Logs to investigate what had happened behind the scenes.
 
