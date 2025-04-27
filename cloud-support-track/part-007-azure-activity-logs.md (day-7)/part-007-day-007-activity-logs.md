@@ -46,5 +46,5 @@ After setting up a Linux VM in Azure, I noticed unusual behavior — external ac
 ⸻
 
 ### Screenshot
-![Azure Activity Log screenshot](cloud-support-track/part-007-azure-activity-logs.md (day-7)/part-007 -day-010-azure-activity-log-vm-support-part7.png)
+![Azure Activity Log screenshot](https://github.com/yavuzkutayozdemir/cloud-journey/blob/722723a10f7629c6894e557b4125145a48896311/cloud-support-track/part-007-azure-activity-logs.md%20(day-7)/part-007%20-day-010-azure-activity-log-vm-support-part7.png)
  
