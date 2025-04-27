@@ -1,46 +1,52 @@
-# Part 004 – Disk Management in Azure (day-5)
+ Goal
 
-## 🎯 Goal
+Use Azure Activity Logs to identify and resolve unexpected changes to a virtual machine resource via the Azure Portal (no CLI used).
 
-Attach a data disk to an existing Azure Virtual Machine using **only the Azure Portal (UI)** — no terminal or CLI.
+⸻
 
----
+ Problem
 
-## 📍 Scenario
+While testing my Linux VM, I suddenly lost remote access. No recent changes were made by me, and the VM appeared healthy in the portal. This unexpected behavior suggested that an automated policy or background action might have silently affected my network settings.
 
-You’ve been asked to attach a persistent storage disk to an existing Linux VM for application logs or data storage. The disk must be created and attached using only the Azure Portal.
+⸻
 
----
+ What I Solved
 
-## 🔧 What You Did
+By digging into the Azure Activity Logs, I discovered that a policy enforcement action ('audit' Policy action) had modified the virtual network configuration. Recognizing it was automatically applied by the subscription’s default governance rules, I updated the VM’s configuration accordingly and restored access without downtime.
 
-1. Navigated to your VM (`vm-foundation001`) in Azure Portal  
-2. Selected the **Disks** blade  
-3. Clicked **+ Add data disk** → then **Create disk**  
-4. Entered:  
-   - Name: `datadisk-001`  
-   - Size: `4 GiB`  
-   - Type: `Standard HDD`  
-   - Region: France Central  
-5. Clicked **Create**, then saved changes  
-6. Verified the disk shows up as `Attached`
+⸻
 
----
+ Scenario
 
-## 📸 Screenshot
+After setting up a Linux VM in Azure, I noticed unusual behavior — external access was temporarily disrupted. Suspecting a configuration issue, I explored the Activity Logs to investigate what had happened behind the scenes.
 
-![Disk Management](https://raw.githubusercontent.com/yavuzkutayozdemir/cloud-journey/main/gallery/cloud-support-track/part-004-day-005-disk-management.png)
+⸻
 
----
+ What You Did
+	1.	Opened the Azure Portal and navigated to the VM named vm-support
+	2.	Clicked on Activity Log in the left-hand menu
+	3.	Filtered logs by:
+	•	Time range: Last 6 hours
+	•	Resource: vm-support
+	•	Subscription: Azure for Students
+	4.	Found a relevant event:
+	•	Action: 'audit' Policy action
+	•	Status: Successful
+	•	Initiated by: My user ID
+	5.	Realized a network restriction policy had been enforced
+	6.	Adjusted the policy to restore connectivity
 
-## ✅ Outcome
+⸻
 
-The disk is now successfully attached to the VM via UI, without any terminal commands. It is ready for OS-level mounting if needed.
+ What I Learned
+	•	How to interpret and filter Azure Activity Logs to trace system-level events
+	•	The role of policy assignments and their hidden impact on deployed resources
+	•	That visibility into past actions is key for maintaining uptime and accountability
+	•	Real-life debugging often starts with the question: “What changed?”
 
----
-
-## 💡 What I Learned
-
-- How to attach and configure a data disk in Azure Portal  
-- Difference between OS and data disks  
-- Using only UI for infrastructure changes
+⸻
+<br>
+ 
+ Screenshot
+ ![Azure Activity Log screenshot – vm-support](part-007-day-010-azure-activity-log-vm-support-part7.png)
+ 
