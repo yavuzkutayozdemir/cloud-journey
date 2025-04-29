@@ -26,4 +26,4 @@ After confirming all system-level checks passed, I was able to successfully conn
 
 ### Screenshot
 
-![NSG showing correct inbound SSH rule]([../gallery/part-008-day-011-nsg-verification.png](https://github.com/yavuzkutayozdemir/cloud-journey/blob/cc6b2d75caaa1d91d24700c3a1807893c5af0d6b/cloud-support-track/part-008-day-011-nsg-verification.md/part-008-day-011-nsg-verification.png))
+![NSG showing correct inbound SSH rule](https://github.com/yavuzkutayozdemir/cloud-journey/blob/cc6b2d75caaa1d91d24700c3a1807893c5af0d6b/cloud-support-track/part-008-day-011-nsg-verification.md/part-008-day-011-nsg-verification.png)
