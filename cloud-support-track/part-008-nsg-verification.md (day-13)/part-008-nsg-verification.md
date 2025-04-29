@@ -25,4 +25,4 @@ After checking the NSG rules again, I realized the rule was indeed correct, but 
 ---
 
 ### Screenshot
-![NSG Rule Troubleshooting](../../gallery/part-009-day-013-nsg-verification.png)
+![NSG Rule Troubleshooting](https://github.com/yavuzkutayozdemir/cloud-journey/blob/3719f8ab2877363e2b4d602766a715c5f5b9da0a/cloud-support-track/part-008-nsg-verification.md%20(day-13)/part-008-day-013-nsg-verification.png)
